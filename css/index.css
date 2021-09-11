@@ -37,6 +37,10 @@ a:focus::after {
     transform: translate3d(0, 0.2em, 0);
 }
 
+header {
+    margin-bottom: 130px;
+}
+
 header h3 {
     color: white;
     font-size: 14px;
@@ -91,6 +95,33 @@ section .leftElement p {
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    margin: 0;
+    margin-bottom: 30px;
     font-size: 24px;
+}
+
+section .leftElement {
+    float: left;
+    margin-top: 60px;
+}
+
+section .rightElement {
+    float: right;
+}
+
+section .rightElement .backImg {
+    width: 822px;
+    height: 587px;
+    background-color: red;
+    padding: 20px;
+}
+
+section .leftElement .read {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 19px;
+}
+
+h6 {
+    display: inline;
 }
