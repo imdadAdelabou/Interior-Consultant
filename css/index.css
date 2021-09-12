@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #181719;
     padding: 10px 50px 26px 79px;
 }
 
@@ -113,6 +113,7 @@ section .rightElement .backImg {
     height: 587px;
     padding: 30px;
     background-image: url("/assets/imgs/photo1.png");
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -126,12 +127,17 @@ section .leftElement .read {
 section .rightElement .userProfile {
     width: 410px;
     height: 189px;
-    background-color: red;
+    background-color: #181719;
     padding: 23px 0 34px 26px;
+    position: relative;
+    top: -90px;
+    left: 330px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .dataUser {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .circle {
@@ -166,4 +172,31 @@ h6 {
     font-size: small;
     color: #828282;
     line-height: 15px;
+}
+
+p {
+    font-family: "Lora";
+    font-size: x-large;
+    line-height: 31px;
+    margin: 0;
+    font-weight: bold;
+}
+
+section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer p {
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+    font-size: small;
+    color: #A9A9A9;
+}
+
+#username {
+    text-decoration: underline;
 }
