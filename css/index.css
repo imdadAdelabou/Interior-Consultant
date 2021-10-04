@@ -218,7 +218,11 @@ footer p {
         margin: 0;
     }
     section .leftElement h1 {
-        font-size: 3em;
+        font-size: 4em;
+        margin: 30px 0 25px 0;
+    }
+    section .leftElement p {
+        font-size: 1.8em;
         margin: 0;
     }
     section .rightElement {
