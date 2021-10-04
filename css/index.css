@@ -85,7 +85,7 @@ section {
 section .leftElement h1 {
     font-family: 'Lora';
     font-weight: 500;
-    line-height: 62px;
+    line-height: 46px;
     font-size: 48px;
     margin-bottom: 40px;
 }
@@ -199,4 +199,39 @@ footer p {
 
 #username {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 62.5%;
+        padding: 0;
+    }
+    .rightElement {
+        display: none;
+    }
+    header {
+        margin: 0;
+    }
+    section .leftElement {
+        float: none;
+        display: block;
+        margin: 0;
+    }
+    section .leftElement h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    section .rightElement {
+        float: none;
+        display: block;
+    }
+    section .rightElement .backImg {
+        max-width: 391px;
+        height: 280px;
+    }
+    section .rightElement .userProfile {
+        max-width: 300px;
+        height: 138px;
+        left: 0;
+    }
 }
