@@ -10,6 +10,41 @@ body {
     padding: 10px 50px 26px 79px;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    height: 100vh;
+    width: 60vw;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 32px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav--open {
+    transform: translateX(-100%);
+}
+
+.nav--open+.backdrop {
+    opacity: 1;
+}
+
+.backdrop {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    background: rgba(1, 1, 1, 0.5);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 a {
     text-decoration: none;
 }
@@ -201,12 +236,42 @@ footer p {
     text-decoration: underline;
 }
 
+.hamburger-button {
+    margin-top: 12px;
+    background: none;
+    border: none;
+    position: relative;
+    z-index: 10;
+}
+
+.hamburger-button__bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: 4px;
+    transform-origin: 25px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hamburger-button--open .hamburger-button__bar:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.hamburger-button--open .hamburger-button__bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-button--open .hamburger-button__bar:nth-child(3) {
+    transform: rotate(45deg);
+}
+
 @media screen and (max-width: 480px) {
     body {
         font-size: 62.5%;
         padding: 0;
     }
-    .rightElement {
+    header .rightElement #desktop-nav {
         display: none;
     }
     header {

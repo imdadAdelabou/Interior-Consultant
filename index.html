@@ -12,7 +12,7 @@
     <header>
         <h3>THIS INTERIOR</h3>
         <div class="rightElement">
-            <ul>
+            <ul id="desktop-nav">
                 <li>
                     <a href="#0">Home</a>
                 </li>
@@ -26,7 +26,23 @@
                     <a>Contact</a>
                 </li>
             </ul>
+            <button class="hamburger-button" id="hamburger-button" onclick="toggleNavigation()">
+                <div class="hamburger-button__bar"></div>
+                <div class="hamburger-button__bar"></div>
+                <div class="hamburger-button__bar"></div>
+            </button>
         </div>
+        <nav>
+            <div class="nav" id="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Collection</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="backdrop"></div>
+        </nav>
     </header>
     <section>
         <div class="leftElement">
@@ -59,6 +75,23 @@
     <footer>
         <p>created by <span id="username">imdadAdelabou</span> - devChallenges.io</p>
     </footer>
+
+    <script>
+        const toggle = (elementId) => {
+            const element = document.getElementById(elementId);
+
+            if (element.classList.contains(elementId + "--open")) {
+                element.classList.remove(elementId + "--open")
+            } else {
+                element.classList.add(elementId + "--open")
+            }
+        }
+
+        const toggleNavigation = () => {
+            toggle("nav");
+            toggle("hamburger-button");
+        }
+    </script>
 </body>
 
 </html>
