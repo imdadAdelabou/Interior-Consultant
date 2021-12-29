@@ -122,7 +122,7 @@ section .rightElement .backImg {
     width: 822px;
     height: 587px;
     padding: 30px;
-    background-image: url("./assets/imgs/photo1.png");
+    background-image: url("/assets/imgs/photo1.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
