@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icons/devchallenges.png" type="image/png">
 </head>
 
 <body>
@@ -14,10 +15,10 @@
         <div class="rightElement">
             <ul id="desktop-nav">
                 <li>
-                    <a href="#0">Home</a>
+                    <a class="active" href="#0">Home</a>
                 </li>
                 <li>
-                    <a>Collection</a>
+                    <a href="#1">Collection</a>
                 </li>
                 <li>
                     <a>About</a>
@@ -35,7 +36,7 @@
         <nav>
             <div class="nav" id="nav">
                 <ul>
-                    <li>Home</li>
+                    <li> <a class="active">Home</a></li>
                     <li>Collection</li>
                     <li>About</li>
                     <li>Contact</li>
@@ -50,9 +51,10 @@
             <p>A full-Service residential &<br> commercial interior design and<br> staging company offering<br> professional organizing &<br> eco-services.
                 <div class="read">
                     <span>Read more</span>
-                    <span class="material-icons">
+                    <span class="material-icons space">
                     arrow_right_alt
-                    </span></div>
+                    </span>
+                </div>
         </div>
         <div class="rightElement">
             <div class="backImg">
@@ -76,21 +78,7 @@
         <p>created by <span id="username">imdadAdelabou</span> - devChallenges.io</p>
     </footer>
 
-    <script>
-        const toggle = (elementId) => {
-            const element = document.getElementById(elementId);
-
-            if (element.classList.contains(elementId + "--open")) {
-                element.classList.remove(elementId + "--open")
-            } else {
-                element.classList.add(elementId + "--open")
-            }
-        }
-
-        const toggleNavigation = () => {
-            toggle("nav");
-            toggle("hamburger-button");
-        }
+    <script src="/js/index.js">
     </script>
 </body>
 
