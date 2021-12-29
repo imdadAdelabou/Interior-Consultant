@@ -156,7 +156,7 @@ section .rightElement .userProfile {
     height: 70px;
     background-color: green;
     border-radius: 90%;
-    background-image: url("/assets/imgs/photo2.png");
+    background-image: url("../assets/imgs/photo2.png");
     background-size: contain;
 }
 
