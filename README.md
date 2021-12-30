@@ -9,6 +9,7 @@
 ### Link: https://www.figma.com/file/3cf83hHRBAGjG5EKPcG2bV/interior-consultant-challenge?node-id=0%3A1
 
 <img src="/screenshots/figmadesign.png" />
+
 ## Live
 ### Link to the launched site: https://interior-consultant-imdadadelabou.vercel.app/#0
 
