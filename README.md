@@ -13,5 +13,9 @@
 ## Live
 ### Link to the launched site: https://interior-consultant-imdadadelabou.vercel.app/#0
 
-## Screenshots
- 
+## Main skills to acquire
+
+Using **transform** and **animate** to create some coolest animation
+
+## 😇 Author(s)
+**Imdad Adelabou** [![Twitter Follow](https://img.shields.io/twitter/follow/IAdelabou?style=social)](https://twitter.com/IAdelabou?s=09)
